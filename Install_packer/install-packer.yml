@@ -1,0 +1,10 @@
+#
+#About: This will install packer
+#
+---
+- name: Install Packer
+  hosts: localhost
+  gather_facts: false
+  become: true
+  roles:
+    - packer
