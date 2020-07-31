@@ -2,7 +2,7 @@
 #About: This will install ovftool
 #
 ---
-  - name: Install Packer
+  - name: Install ovftool
     hosts: localhost
     gather_facts: false
     become: true

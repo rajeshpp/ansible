@@ -5,12 +5,12 @@
   - name: Make bundle executable
     file:
       mode: 0755
-      path: "{{ tmp_dir }}/{{ folder_name }}/{{ file_name }}"
+      path: "{{ tmp_dir }}/{{ file_name }}"
 
 
   - name: Install OVFtool
     become: yes
-    shell: "{{ tmp_dir }}/{{ folder_name }}/{{ file_name }} --eulas-agreed --required --console"
+    shell: "{{ tmp_dir }}/{{ file_name }} --eulas-agreed --required --console"
     tags:
       - skip_ansible_lint
 
