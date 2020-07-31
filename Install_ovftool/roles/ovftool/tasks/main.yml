@@ -1,6 +1,6 @@
 ---
-  - name: Download packer binaries
-    unarchive: src={{pl_packer_download_url}} remote_src=True dest={{ tmp_dir }}
+  - name: Download ovftool binaries
+    unarchive: src={{ovftool_download_url}} remote_src=True dest={{ tmp_dir }}
   
   - name: Make bundle executable
     file:
@@ -15,5 +15,5 @@
       - skip_ansible_lint
 
   - name: Test that it operates
-    command: "ovftool --help"
+    command: "ovftool -v"
     changed_when: False

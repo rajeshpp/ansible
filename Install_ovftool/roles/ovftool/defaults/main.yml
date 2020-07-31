@@ -1,10 +1,7 @@
-pl_packer_download_url : https://repo1.uhc.com:443/artifactory/docker/imagefactory/tools/VMware-ovftool-4.4.0-15722219-lin.x86_64.zip
+ovftool_download_url : https://repo1.uhc.com:443/artifactory/docker/imagefactory/tools/VMware-ovftool-4.4.0-15722219-lin.x86_64.zip
 
 # The temporary directory to use for storing downloaded and other temmporary file.
 tmp_dir: "/tmp"
-
-#Folder name after unzip
-folder_name: "VMware-ovftool-4.4.0-15722219-lin.x86_64"
 
 #File name after unzip
 file_name: "VMware-ovftool-4.4.0-15722219-lin.x86_64.bundle"

@@ -1,0 +1,11 @@
+#
+#About: This will install ovftool & packer
+#
+---
+  - name: Install ovftool & packer
+    hosts: localhost
+    gather_facts: false
+    become: true
+    roles:
+      - ovftool
+      - packer
