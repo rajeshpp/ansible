@@ -13,7 +13,3 @@
     shell: "{{ tmp_dir }}/{{ file_name }} --eulas-agreed --required --console"
     tags:
       - skip_ansible_lint
-
-  - name: Test that it operates
-    command: "ovftool -v"
-    changed_when: False
