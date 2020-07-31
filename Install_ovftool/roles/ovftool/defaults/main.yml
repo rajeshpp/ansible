@@ -1,16 +1,11 @@
-# The temporary directory to use for storing downloaded and other temporary file.
+pl_packer_download_url : https://repo1.uhc.com:443/artifactory/docker/imagefactory/tools/VMware-ovftool-4.4.0-15722219-lin.x86_64.zip
+
+# The temporary directory to use for storing downloaded and other temmporary file.
 tmp_dir: "/tmp"
 
-# The ovftool binary to download.
-ovf_zip: "VMware-ovftool-4.4.0-15722219-lin.x86_64.zip"
+#Folder name after unzip
+folder_name: "VMware-ovftool-4.4.0-15722219-lin.x86_64"
 
-# The MD5 hash of the binary to download.
-ovf_zip_md5: "0ac09471ce3e9fdc970407d203bdedc1"
+#File name after unzip
+file_name: "VMware-ovftool-4.4.0-15722219-lin.x86_64.bundle"
 
-# The url to use for downloading the binary.
-# Note: download_site can be any valid URL that the
-# Ansible "url" module will support.
-ovf_zip_url: "{{ download_site }}/{{ ovf_zip }}"
-
-# The directory into which to install the downloaded ovftool binaries.
-ovf_dir: "/usr"
